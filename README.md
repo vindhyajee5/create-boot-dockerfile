@@ -26,7 +26,7 @@ And remapping to the host port.
 docker run -p 8085:8085 spring-boot-welcome-web
 ````
 
-**build docker image**
+**Build docker image**
 
 ````
 docker build -f Dockerfile -t tag image-name
@@ -39,3 +39,17 @@ image-name: the name for the image
 ````
 docker run -p 8085:8085 spring-boot-welcome-web
 ````
+
+**Enter inside container**
+
+````
+docker exec -it container-name/container-id bash
+
+run command env 
+````
+
+![image](https://user-images.githubusercontent.com/17804600/125706054-5ac8cbae-88d0-4bba-ad39-abfce33ecc51.png)
+
+The target jar file was ADDed inside container root directory. 
+
+
