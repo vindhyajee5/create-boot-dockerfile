@@ -1,6 +1,6 @@
 # create-boot-dockerfile
 
-creating a spring-boot docker image
+creating a spring-boot application container from a Dockerfile
 
 A SpringBoot application Image bases on an OpenJDK image because Java has been deprecated. 
 
@@ -33,7 +33,7 @@ The docker build command builds Docker images from a Dockerfile and a “context
 ````
 docker build [OPTIONS] PATH | URL | -
 
-docker build -f PATH/Dockerfile -t name:tag
+docker build -f PATH/Dockerfile -t name:tag PATH
 
 [OPTIONS]
 -f: Name of the Dockerfile (Default is 'PATH/Dockerfile')
