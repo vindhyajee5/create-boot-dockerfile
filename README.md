@@ -1,6 +1,8 @@
-# create-boot-dockerfile
+# containerizing spring boot application
 
-creating a spring-boot application container from a Dockerfile
+two ways: from a Dockerfile or a Springboot Maven plugin
+
+## Creating Dockerfile
 
 A SpringBoot application Image bases on an OpenJDK image because Java has been deprecated. 
 
@@ -60,5 +62,13 @@ run command env
 ![image](https://user-images.githubusercontent.com/17804600/125706054-5ac8cbae-88d0-4bba-ad39-abfce33ecc51.png)
 
 The target jar file was ADDed inside container root directory. 
+
+## From Springboot Maven Plugin
+
+````
+mvn spring-boot:build-image
+````
+
+![image](https://user-images.githubusercontent.com/17804600/125911996-72f914e7-661b-4573-880d-c4b457a8b4d0.png)
 
 
